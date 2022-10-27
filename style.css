@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #25150E;
+}
+
+.post-container {
+    position: absolute;
+    top: 350px;
+    left: 600px;
+}
+
+.barra {
+    position: relative;
+    top: -395px;
+    width: 1950px;
+    height: 150px;
+    background-color: #ECDAC4;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 40px rgba(0, 0, 0, .2);
+}
+
+.logo {
+    position: absolute;
+    top : 25px;
+    left: 25px;
+    width: 100px;
+    height: 100px;
+    border: 8px solid #ffefdb;
+    box-shadow: 0 0 0 12px #352a22;
+    border-radius: 10px 10px 60px 75px;
+    background: url('images/coffee.png');
+    background-repeat: repeat-x;
+    background-position: 0 130px;
+    animation: enchendo 4s infinite;
+}
+
+@keyframes enchendo {
+    0%, 100% {
+        background-position: 0 130px;
+    }
+
+    50% {
+        background-position: 600px -70px;
+    }
+}
+
+.logo .logo-apoio {
+    position: absolute;
+    top: -2px;
+    right: -50px;
+    width: 30px;
+    height: 60px;
+    border: 7px solid #352a22;
+    border-radius: 20px 10px 50px 20px;
+}
+
+.logo .logo-texto {
+    position: absolute;
+    right: -500px;
+    font: 1000 3rem 'Montserrat';
+    background: linear-gradient(to right, #C08C5A, #25150E, #ECDAC4);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow:#25150E -2px 0, #C08C5A 2px 0;
+}
+
+
+
+.caixa {
+    width: 480px;
+    height: 480px;
+    background: #f4f7f8;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.caixa .like {
+
+    top: 400px;
+    left: 15px;
+    width: 30px;
+    height: 30px;
+}
+
+.like:hover{
+    opacity: 0.5;
+}
+
+.caixa .like-string {
+
+    top: 430px;
+    left: 15px;
+    font : 10 1rem 'Montserrat';
+}
+
+.caixa .comentarios {
+
+    top: 400px;
+    left: 70px;
+    width: 30px;
+    height: 30px;
+}
+
+.caixa .comentarios-string-usuario{
+
+    top: 450px;
+    left: 15px;
+    font: 15px 'Montserrat';
+    text-shadow:#25150E 1px 0;
+}
+.caixa .comentarios-string{
+
+    top: 450px;
+    left: 150px;
+    font: 15px 'Montserrat';
+}
+
+.comentarios:hover{
+    opacity: 0.5;
+}
+
+.caixa .compartilhar {
+
+    top: 400px;
+    left: 128px;
+    width: 30px;
+    height: 30px;
+}
+
+.compartilhar:hover{
+    opacity: 0.5;
+}
+
+.caixa .salvar {
+    top: 400px;
+    right: 15px;
+    width: 30px;
+    height: 30px;  
+}
+
+.salvar:hover{
+    opacity: 0.5;
+}
+
+.caixa .etc {
+    top: 15px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+}
+
+.etc:hover{
+    opacity: 0.5;
+}
+
+.caixa .usuario {
+
+    top: 15px;
+    left: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.usuario:hover{
+    width: 40px;
+    height: 40px;
+}
+
+.caixa .usuario-string {
+    top: 19px;
+    left: 47px;
+    font : 10 1rem 'Montserrat';
+}
+
+.caixa .post {
+
+    top : 80px;
+    width: 480px;
+    height: 280px;
+    border-width: 10px;
+    border-style :solid;
+    border-color: #25150E;
+}
+
+.caixa .post-title {
+
+    top: 48px;
+    left: 35px;
+    font : 10 2rem 'Montserrat';
+}
+
+.caixa .post-body {
+
+    top: 370px;
+    left: 35px;
+    font : 10 1rem 'Montserrat';
+}
+
+.quadro {
+    position: relative;
+    top: 20px;
+    left: 1600px;
+    width: 80px;
+    height: 105px;
+    font-family: 'Open Sans';
+}
+
+.quadro .quadro-dentro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-radius: 8px;
+    backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, .05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+}
+
+.quadro .perfil img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 12px solid rgba(255, 255, 255, .05);
+}
+
+.quadro .perfil {
+    transform: translateY(20px);
+    transition: .4s ease-out;
+}
+
+.quadro:hover .perfil {
+    transform: translateY(0);
+}
