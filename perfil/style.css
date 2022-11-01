@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #25150E;
+}
+
+.quadro {
+    position: relative;
+    width: 360px;
+    height: 420px;
+    font-family: 'Open Sans';
+}
+
+.quadro .quadro-dentro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-radius: 8px;
+    backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, .05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+}
+
+.quadro .circulo {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    animation: 2s ease-in infinite alternate;
+}
+
+.quadro .circulo:nth-child(1) {
+    width: 120px;
+    height: 120px;
+    top: -50px;
+    left: -50px;
+    background: linear-gradient(
+        #25150E, #C08C5A
+    );
+    animation-name: move-up;
+}
+
+.quadro .circulo:nth-child(2) {
+    width: 180px;
+    height: 180px;
+    bottom: -80px;
+    right: -86px;
+    background: linear-gradient(
+        #25150E, #ECDAC4
+    );
+    animation-name: move-down;
+}
+
+@keyframes move-up {
+    to {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes move-down {
+    to {
+        transform: translateY(10px);
+    }
+}
+
+.quadro .perfil img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 12px solid rgba(255, 255, 255, .05);
+}
+
+.quadro .perfil p {
+    color: #e0e0e0;
+    font-size: 18px;
+}
+
+.quadro .perfil {
+    transform: translateY(20px);
+    transition: .4s ease-out;
+}
+
+.quadro:hover .perfil {
+    transform: translateY(0);
+}
+
+
+.quadro .perfil .box-username{
+    position: absolute;
+    left: -50px;
+}
+
+.quadro .perfil .box-email{
+    position: absolute;
+    left: -50px;
+}
+
+.quadro .perfil .box-age{
+    position: absolute;
+    left: -50px;
+}
+
+.quadro .perfil .box-gender{
+    position: absolute;
+    left: -50px;
+}
+
+.quadro .perfil .box-phone{
+    position: absolute;
+    left: -50px;
+}
+
+.quadro .perfil .box-birth-date{
+    position: absolute;
+    left: -50px;
+}
+
+
+
+
